@@ -37,9 +37,9 @@ georgia_pop %>% #use georgia_pop data
        title = "COMPARATIVE INCREASE OF WHITE AND COLORED\nPOPULATION IN GEORGIA.\n\n",
        caption = "Created by Emily Rukstales | Source: Starks, Hillery, and Tyler - W.E.B. DuBois Data Challenge | #TidyTuesday #DuBoisChallenge") +
   theme(plot.background = element_rect(fill = "#f0d9c2"), # change background color
-        panel.border = element_rect(color = "black", fill = NA, size = 0.1), # adjust color and size of border
+        panel.border = element_rect(color = "black", fill = NA, size = 0.3), # adjust color and size of border
         panel.background = element_rect(fill = "#f0d9c2"), # change panel color
-        panel.grid.major = element_line(color = "#dc143c", size = 0.1), # change color and size of major grid lines
+        panel.grid.major = element_line(color = "#dc143c", size = 0.3), # change color and size of major grid lines
         panel.grid.minor = element_blank(), # get ride of minor grid lines
         axis.ticks = element_blank(), # get rid of axis ticks
         axis.text.y = element_text(size = 12), # change size of y axis text
@@ -54,7 +54,6 @@ georgia_pop %>% #use georgia_pop data
         plot.margin = margin(30, 110, 30, 90), # put a margin around entire plot
         plot.title = element_text(face = "bold", size = 23, hjust = 0.5)) + # adjust plot title
  ggsave(here("2021-02-16_DuBois", "Outputs", "2021-02-16_DuBois.png"),
-         dpi = 72,
          width = unit(11, "in"),
          height = unit(14, "in"))
 
