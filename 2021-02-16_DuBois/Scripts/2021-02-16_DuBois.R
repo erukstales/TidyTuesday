@@ -8,8 +8,7 @@
 library(tidyverse)
 library(here)
 library(tidytuesdayR)
-library(ggplot2)
-library(pBrackets)
+
 
 
 ### Load Data ##################################################################
